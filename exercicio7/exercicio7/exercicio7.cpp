@@ -13,22 +13,23 @@ int LerNumero() {
 	return numero;
 }
 
-int Calculo(int a, int b) {
-	if (a / b == 0 || b / a == 0)
-		printf_s("Sao multiplos");
-	else
-		printf_s("Nao sao multiplos");
-	
+void Calculo() {
+	int a = LerNumero();
+	int b = LerNumero();
+	if (a % b == 0 || b % a == 0) {
+		printf_s("Sao multiplos\n");
+	}
+	else {
+		printf_s("Nao sao multiplos\n");
+	}
 }
 
 
 int main()
 {
-	int numero_a = LerNumero();
-	int numero_b = LerNumero();
-	int calc = Calculo(numero_a, numero_b);
+	Calculo();
 
-
+	system("pause");
 }
 
 // Executar programa: Ctrl + F5 ou Menu Depurar > Iniciar Sem Depuração

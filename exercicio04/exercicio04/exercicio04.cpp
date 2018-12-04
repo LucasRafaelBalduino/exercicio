@@ -3,28 +3,25 @@
 
 #include "pch.h"
 #include <iostream>
+//Faça um algoritmo que leia as 3 notas de um aluno e calcule a média final deste aluno.Considerar que a média é ponderada e que o peso das notas é : 2, 3 e 5, respectivamente.
 
-int LerNota() {
-	int nota;
+float LerNota() {
+	float nota;
 	printf_s("Digite suas 3 notas por gentileza\n");
 	scanf_s("%d", &nota);
 	return nota;
 }
-float Calculo(float nota1, float nota2, float nota3) {
+void Calculo() {
+	float nota1 = LerNota();
+	float nota2 = LerNota();
+	float nota3 = LerNota();
 	float resultado;
-	 resultado= (((nota1 * 2) + (nota2 * 3) + (nota3 * 5))/10);
-
-	return resultado;
+	 resultado= ((nota1 * 2) + (nota2 * 3) + (nota3 * 5))/10;
+	 printf_s("Sua nota e: %f \n", resultado);
 }
 int main()
 {
-	printf_s("Faca um algoritmo que leia as 3 notas de um aluno e calcule a media final deste aluno.Considerar que a media e ponderada e que o peso das notas e : 2, 3 e 5, respectivamente.\n");
-	int Nota1 = LerNota();
-	int Nota2 = LerNota();
-	int Nota3 = LerNota();
- 	float Media = Calculo( Nota1, Nota2, Nota3);
-
-	printf_s("A media ponderada das notas:  f% \n", Media);
+	Calculo();
 
 }
 

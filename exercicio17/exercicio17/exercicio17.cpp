@@ -7,7 +7,7 @@
 // Implemente um programa que desenhe um "pinheiro" na tela, similar ao abaixo.(Enriqueça o desenho com outros caracteres, simulando enfeites)
 int main()
 {
-	printf_s("\t X\n \t XX\n \t XXX\n\t XXXX\n");
+	printf_s("\t  X\n\t XXX\n\tOXXXO\n       XXXOXXX\n      XXXXXXXOX\n     XXXOXXXXXXX\n    XOXXXXXXXOXXX\n   XOXXOXXOXXXXOXX\n         XX\n         XX\n        XXXX\n");
 	system("pause");
 }
 

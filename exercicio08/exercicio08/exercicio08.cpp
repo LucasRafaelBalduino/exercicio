@@ -14,33 +14,32 @@ int LerIdade() {
 	return idade;
 }
 
-int classificador(int opcao) {
-
+void Classificador() {
+	int opcao = LerIdade();
 	if (opcao <= 7) {
-		printf_s("Infantil A");
+		printf_s("Infantil A\n");
 }
 	if (opcao >= 8 & opcao <= 10) {
-		printf_s("Infantil B");
+		printf_s("Infantil B\n");
 	}
 
 	if (opcao >= 11 & opcao <= 13) {
-		printf_s("Juvinil A");
+		printf_s("Juvinil A\n");
 	}
 
 	if (opcao >= 17 & opcao <= 17) {
-		printf_s("Jvenil B");
+		printf_s("Jvenil B\n");
 	}
 
 	if (opcao > 18) {
-		printf_s("Adulto");
+		printf_s("Adulto\n");
 	}
 }
 
 int main()
 {
-	int nadador = LerIdade();
-	int classificacao = classificador(nadador);
-	printf_s("%d", classificacao );
+	Classificador();
+	system("pause");
 }
 
 // Executar programa: Ctrl + F5 ou Menu Depurar > Iniciar Sem Depuração

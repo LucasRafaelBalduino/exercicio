@@ -13,20 +13,19 @@ int LerNumero() {
 	return numero;
 }
 
-int Calculo(int n) {
-
+void Calculo() {
+	int n = LerNumero();
+	int resultado;
     for (int i = 0; i < n; i++) {
-		n = n + i;
+		resultado = n + i;
 	}
-	return n;
+	printf_s("A soma dos valores e: %d \n", resultado);
 }
 
 int main()
 {
-	int num = LerNumero();
-	int soma = Calculo(num);
-
-	printf_s("A soma dos numero e: %d", soma);
+	
+	Calculo();
 
 	system("pause");
 

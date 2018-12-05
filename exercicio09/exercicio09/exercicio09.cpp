@@ -10,7 +10,7 @@
 float LerNota() {
 	printf_s("Informe suas 3 notas: \n");
 	float nota;
-	scanf_s("%d", &nota);
+	scanf_s("%f", &nota);
 	return nota;
 }
 
@@ -20,7 +20,7 @@ void TipoAritmetica() {
 	float nota3 = LerNota();
 	float media;
 	media = ((nota1 + nota2 + nota3)/3);
-	printf_s("Sua media Aritmedia e: %d \n", media);
+	printf_s("Sua media Aritmedia e: %f \n", media);
 	
 }
 
@@ -30,7 +30,7 @@ void TipoPonderada() {
 	float nota3 = LerNota();
 	float media;
 	media = ((nota1 * 3) + (nota2 * 3) + (nota3 * 4));
-	printf_s("Sua media Ponderada e: %d \n", media);
+	printf_s("Sua media Ponderada e: %f \n", media);
 
 }
 
@@ -40,7 +40,7 @@ void TipoHarmonica() {
 	float nota3 = LerNota();
 	float media;
 	media = 3 / (1 / nota1 + 1 / nota2 + 1 / nota3);
-	printf_s("Sua media Harmonica e: %d \n", media);
+	printf_s("Sua media Harmonica e: %f\n", media);
 
 }
 
